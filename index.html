@@ -27,6 +27,44 @@
 
 </head>
 <body class="bg-gray-900">
+    <nav class="px-12 py-4 align-center items-center gap-2 bg-white sticky top-0">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="flex gap-2 align-center items-center">
+            <div class="w-8">
+              <img src="https://github.com/gobizid/gobizid.github.io/blob/main/assets/img/logos/logo-fix.png?raw=true" alt="" style="width: 40px; margin-right: 5px;">
+            </div>
+            <div class="invisible md:visible">
+              <a class="text-sm md:text-lg"><b>Rate Makanan</b></a>
+            </div>
+          </div>
+          
+          <div class="flex justify-between md:justify-around items-center col-span-2 order-3 md:order-2">
+            <a href="#" 
+               class="text-gray-800 font-semibold text-sm md:text-lg text-center rounded-md py-1 px-3 hover:underline hover:text-blue-800 bg-green-200"
+               style="font-family: 'Poppins', sans-serif; font-weight: bold;">
+               Feedback
+            </a>
+        
+            <a href="https://gobizrate.github.io/view-rate.html" 
+               class="text-gray-800 font-semibold text-sm md:text-lg text-center rounded-md py-1 px-3 hover:underline hover:text-blue-800"
+               style="font-family: 'Poppins', sans-serif; font-weight: bold;">
+               All Rates
+            </a>
+            
+            <a href="https://gobizrate.github.io/FAQ/" 
+               class="text-gray-800 font-semibold text-sm md:text-lg text-center rounded-md py-1 px-3 hover:underline hover:text-blue-800"
+               style="font-family: 'Poppins', sans-serif; font-weight: bold;">
+               FAQ
+            </a>
+        </div>
+        
+          
+          <div class="flex justify-end items-center order-2 md:order-3">
+            <a href="https://go.biz.id/" class="bg-red-400 text-white rounded-md px-4 py-1">Back</a>
+          </div>
+        </div>
+			</nav>
+
     <section class="m-12 flex justify-center">
         <div class="container bg-white grid grid-cols-1 lg:grid-cols-2 md:w-1/2 rounded-lg">
             <div style="background-image: url('src/img/food.jpg'); background-size: cover;"
@@ -40,7 +78,7 @@
                 <div class="h-3/4">
                     <div class="flex justify-between pt-2">
                         <p class="self-start font-semibold">Gimana Makanannya?</p>
-                        <a href="#">x</a>
+                        <img src="/src/svg/exit.svg" alt="" class="w-5 cursor-pointer">
                     </div>
                     <div class="rating">
                         <div class="rating flex justify-between py-4">
@@ -67,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex">
+                <div class="flex pt-6">
                     <textarea name="" id=""
                         class="w-80 h-8 border border-4 rounded-2xl resize-none px-2 focus:outline-none overflow-hidden"
                         placeholder="Enak banget!!"></textarea>
