@@ -29,7 +29,7 @@
 <body class="bg-gray-900">
 
     <!-- ===Nav Start=== -->
-    <nav class="px-12 py-4 align-center items-center gap-2 bg-white sticky top-0">
+    <nav class="px-12 py-4 align-center items-center gap-2 bg-white sticky top-0" style="z-index: 1;">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div class="flex gap-2 align-center items-center">
             <div class="w-8">
@@ -130,14 +130,14 @@
                 <a href="">Rate Toko</a>
             </div>
             <div class="text-center hover:bg-gray-400 rounded px-2">
-                <a href="">Lihat Komentar</a>
+                <a href="#" id="lihatKomentar">Lihat Komentar</a>
             </div>
         </div>
     </section>
     <!-- ===Other Option Buttons End=== -->
 
     <!-- ===Comment Section Start=== -->
-    <Section class="m-12 flex justify-center">
+    <Section class="m-12 flex justify-center hidden" id="komen">
         <div class="container bg-white md:w-1/2 rounded-lg p-2">
             <div class="flex justify-start pb-2 border-b-2 border-gray-200">
                 <p class="font-semibold">Komentar Makanan Ini</p>
@@ -199,8 +199,12 @@
                 <p class="pt-2 px-4">Hmmmmmmm!</p>
             </div>
             <!-- ===Comment Card End=== -->
+             <p class="text-center text-blue-600 cursor-pointer">See More...</p>
         </div>
     </Section>
     <!-- ===Comment Section End=== -->
+
+    <!-- Scripts -->
+    <script src="/src/js/main.js"></script>
 </body>
 </html>
