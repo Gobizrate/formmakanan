@@ -19,7 +19,7 @@
 	<!-- <link href="static/css/app.css" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <!-- <link rel="stylesheet" href="main.css">   -->
+  <link rel="stylesheet" href="src/css/main.css">  
   <!-- <link rel="stylesheet" href="src/css/loader.css"> -->
   <!-- <link rel="stylesheet" href="src/css/wave.css"> -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -38,25 +38,40 @@
             </div>
             <div class="p-4 flex-col mr-2">
                 <div class="h-3/4">
-                    <div class="flex justify-between ">
+                    <div class="flex justify-between pt-2">
                         <p class="self-start font-semibold">Gimana Makanannya?</p>
                         <a href="#">x</a>
                     </div>
-                    <img src="" alt="emoji">
-                    <div class="flex justify-between py-4">
-                        <input type="checkbox" name="" id="">Star
-                        <input type="checkbox" name="" id="">Star
-                        <input type="checkbox" name="" id="">Star
-                        <input type="checkbox" name="" id="">Star
-                        <input type="checkbox" name="" id="">Star
+                    <div class="rating">
+                        <div class="rating flex justify-between py-4">
+                            <input type="radio" name="rating" id="rating-5" value="5">
+                            <label for="rating-5"></label>
+                            <input type="radio" name="rating" id="rating-4" value="4">
+                            <label for="rating-4"></label>
+                            <input type="radio" name="rating" id="rating-3" value="3">
+                            <label for="rating-3"></label>
+                            <input type="radio" name="rating" id="rating-2" value="2">
+                            <label for="rating-2"></label>
+                            <input type="radio" name="rating" id="rating-1" value="1">
+                            <label for="rating-1"></label>
+                            <div class="emoji-wrapper">
+                                <div class="emoji">
+                                    <img src="src/svg/emoji1.svg" alt="Flat Emoji">
+                                    <img src="src/svg/emoji2.svg" alt="Downward Smile Emoji">
+                                    <img src="src/svg/emoji3.svg" alt="Sad Emoji">
+                                    <img src="src/svg/emoji4.svg" alt="Smile Emoji">
+                                    <img src="src/svg/emoji5.svg" alt="Loving Emoji">
+                                    <img src="src/svg/emoji6.svg" alt="Super Emoji">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="flex">
                     <textarea name="" id=""
-                        class="w-80 border border-4 rounded-md px-2 focus:outline-none overflow-hidden"
-                        placeholder="Enak banget!!">
-                    </textarea>
-                    <button class="mx-4">Send</button>
+                        class="w-80 h-8 border border-4 rounded-2xl resize-none px-2 focus:outline-none overflow-hidden"
+                        placeholder="Enak banget!!"></textarea>
+                    <img src="src/svg/paperplane.svg" alt="" class="w-6 text-green-500 cursor-pointer" fill="currentColor" id="tombol">
                 </div>
             </div>
         </div>
